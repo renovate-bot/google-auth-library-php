@@ -258,7 +258,7 @@ this ItemPool, you have to avoid race condition manually in your code.</p>      
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L76">line 76</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L77">line 77</a></div>
         <code>                    
     <strong>__construct</strong>(<abbr title="Google\Auth\Cache\array<mixed>">array<mixed></abbr> $options = [])
         </code>
@@ -280,7 +280,8 @@ this ItemPool, you have to avoid race condition manually in your code.</p>      
     [optional] Configuration options.</p>
 
 <pre><code>@type int    $variableKey The variable key for getting the data from the shared memory. **Defaults to** 1.
-@type string $proj        The project identifier for ftok. This needs to be a one character string. **Defaults to** 'A'.
+@type string $proj        The project identifier for ftok. This needs to be a one character string.
+                          **Defaults to** 'A'.
 @type int    $memsize     The memory size in bytes for shm_attach. **Defaults to** 10000.
 @type int    $perm        The permission for shm_attach. **Defaults to** 0600.
 </code></pre>
@@ -298,7 +299,7 @@ this ItemPool, you have to avoid race condition manually in your code.</p>      
             </div>
                     <div class="method-item">
                     <h3 id="method_getItem">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L98">line 98</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L99">line 99</a></div>
         <code>                    <abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr>
     <strong>getItem</strong>(string $key)
         </code>
@@ -336,7 +337,7 @@ this ItemPool, you have to avoid race condition manually in your code.</p>      
             </div>
                     <div class="method-item">
                     <h3 id="method_getItems">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L108">line 108</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L109">line 109</a></div>
         <code>                    array|<a target="_blank" href="http://php.net/Traversable">Traversable</a>
     <strong>getItems</strong>(array $keys = [])
         </code>
@@ -377,7 +378,7 @@ this ItemPool, you have to avoid race condition manually in your code.</p>      
             </div>
                     <div class="method-item">
                     <h3 id="method_hasItem">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L124">line 124</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L125">line 125</a></div>
         <code>                    bool
     <strong>hasItem</strong>(string $key)
         </code>
@@ -429,7 +430,7 @@ such situation use CacheItemInterface::isHit() instead.</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_clear">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L133">line 133</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L134">line 134</a></div>
         <code>                    bool
     <strong>clear</strong>()
         </code>
@@ -459,7 +460,7 @@ such situation use CacheItemInterface::isHit() instead.</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteItem">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L143">line 143</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L144">line 144</a></div>
         <code>                    bool
     <strong>deleteItem</strong>(string $key)
         </code>
@@ -509,7 +510,7 @@ such situation use CacheItemInterface::isHit() instead.</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteItems">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L151">line 151</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L152">line 152</a></div>
         <code>                    bool
     <strong>deleteItems</strong>(array $keys)
         </code>
@@ -559,7 +560,7 @@ such situation use CacheItemInterface::isHit() instead.</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_save">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L166">line 166</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L167">line 167</a></div>
         <code>                    bool
     <strong>save</strong>(<abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr> $item)
         </code>
@@ -599,7 +600,7 @@ such situation use CacheItemInterface::isHit() instead.</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_saveDeferred">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L179">line 179</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L180">line 180</a></div>
         <code>                    bool
     <strong>saveDeferred</strong>(<abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr> $item)
         </code>
@@ -639,7 +640,7 @@ such situation use CacheItemInterface::isHit() instead.</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_commit">
-        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L188">line 188</a></div>
+        <div class="location">at         <a href="https://github.com/googleapis/google-auth-library-php/blob/main/src/Cache/SysVCacheItemPool.php#L189">line 189</a></div>
         <code>                    bool
     <strong>commit</strong>()
         </code>
